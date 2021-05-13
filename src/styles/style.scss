@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import "components";
+@import "constants";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  border: 1px solid green;
+}
+.header_container {
+  margin-top: 40px;
+  display: flex;
+  height: 100px;
+  border: 1px solid red;
+}
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 39px 1009px 40px 16px;
+  font-weight: 700;
+  font-size: $size_level1;
+  line-height: 21.09px;
+}

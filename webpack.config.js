@@ -1,5 +1,6 @@
 const path = require("path");
 //const webpack = require("webpack");
+const json = require("json-loader");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 //const ExtractTextPlugin = require("extract-text-webpack-plugin");
@@ -36,6 +37,7 @@ module.exports = {
           },
         ],
       },
+      { test: /\.json$/, loader: "json-loader" },
       {
         test: /\.(s*)css$/,
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
