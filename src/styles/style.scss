@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 @import "components";
 @import "constants";
@@ -9,24 +9,89 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
-
+body {
+  background-color: $color_body_background;
+}
 .container {
+  padding-top: 40px;
   max-width: 1140px;
   margin: 0 auto;
-  border: 1px solid green;
+  background-color: $color_body_background;
 }
 .header_container {
-  margin-top: 40px;
   display: flex;
   height: 100px;
   border: 1px solid red;
+  background-color: $color_white;
 }
 .logo {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin: 39px 1009px 40px 16px;
+  margin: 39px auto 40px 16px;
   font-weight: 700;
   font-size: $size_level1;
   line-height: 21.09px;
+}
+.nav_wrapper {
+  border: 1px solid red;
+  margin-top: 20px;
+  height: 50px;
+  display: flex;
+  background-color: $color_white;
+}
+.nav_link {
+  margin: 16px;
+  font-weight: 400;
+  font-size: $size_level4;
+  line-height: 18.75px;
+  color: $color_disabled_text;
+}
+.main_wrapper {
+  margin-top: 45px;
+  display: flex;
+  height: 300px;
+}
+.aside_wrapper {
+  display: flex;
+  flex: 1;
+  border: 1px solid orangered;
+}
+.section_wrapper {
+  display: flex;
+  flex: 3;
+  border: 1px solid yellow;
+}
+
+.footer_wrapper {
+  display: flex;
+  margin: 23px 0 37px 0;
+  height: 243px;
+  border: 1px solid red;
+  background-color: $color_white;
+}
+.contact_block {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  border: 1px solid red;
+}
+.adress {
+  margin-left: 47px;
+  &::before {
+    content: url(../assets/adress.png);
+  }
+}
+.contact {
+  margin-left: 47px;
+  &::before {
+    content: url(../assets/tel_icon.png);
+  }
+}
+.information_block {
+  display: flex;
+  flex: 2;
+  border: 1px solid red;
+  font-size: $size_description;
+  padding: 75px 287px 107px 0;
 }
