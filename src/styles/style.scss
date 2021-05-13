@@ -21,7 +21,6 @@ body {
 .header_container {
   display: flex;
   height: 100px;
-  border: 1px solid red;
   background-color: $color_white;
 }
 .logo {
@@ -34,7 +33,6 @@ body {
   line-height: 21.09px;
 }
 .nav_wrapper {
-  border: 1px solid red;
   margin-top: 20px;
   height: 50px;
   display: flex;
@@ -50,48 +48,100 @@ body {
 .main_wrapper {
   margin-top: 45px;
   display: flex;
-  height: 300px;
 }
 .aside_wrapper {
   display: flex;
+  flex-direction: column;
   flex: 1;
   border: 1px solid orangered;
+  margin-right: 20px;
+  background-color: $color_white;
+}
+.text,
+.param {
+  font-size: $size_level3;
+  margin: 16px auto 16.5px 16px;
+}
+
+.line {
+  margin: 0 auto;
+}
+.input {
+  display: flex;
+  flex-direction: column;
+  margin-left: 16px;
+}
+.input_min_max {
+  display: flex;
+  justify-content: space-around;
+  width: 100px;
+  height: 35px;
+}
+.input_keywords {
+  display: flex;
+  flex-direction: column;
+  width: 236px;
+  height: 35px;
+}
+.button {
+  margin: 17px 16px 21px 16px;
+  width: 238px;
+  height: 34.5px;
+  font-size: $size_level3;
+  color: $color_white;
+  background-color: $color_link_hover;
+  border: 0;
 }
 .section_wrapper {
   display: flex;
   flex: 3;
   border: 1px solid yellow;
+  font-size: $size_level3;
 }
 
 .footer_wrapper {
   display: flex;
   margin: 23px 0 37px 0;
   height: 243px;
-  border: 1px solid red;
   background-color: $color_white;
 }
 .contact_block {
   display: flex;
   flex-direction: column;
   flex: 1;
-  border: 1px solid red;
 }
 .adress {
-  margin-left: 47px;
+  font-size: $size_description;
+  display: flex;
+  margin: 0 10px 5px 23px;
   &::before {
-    content: url(../assets/adress.png);
+    padding-right: 10px;
+    content: url("../assets/adress.png");
   }
 }
+
 .contact {
-  margin-left: 47px;
+  font-size: $size_description;
+  line-height: 16.41x;
+  display: flex;
+  margin-left: 23px;
   &::before {
-    content: url(../assets/tel_icon.png);
+    content: url("../assets/tel_icon.png");
+    padding-right: 10px;
   }
 }
 .information_block {
   display: flex;
   flex: 2;
-  border: 1px solid red;
   font-size: $size_description;
   padding: 75px 287px 107px 0;
+}
+.social {
+  margin-top: 11px;
+  margin-left: 23px;
+  line-height: 35px;
+}
+.icon {
+  padding-left: 5px;
+  padding-right: 5px;
 }
