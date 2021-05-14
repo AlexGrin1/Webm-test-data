@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
   \***********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../styles/style.scss */ \"./src/styles/style.scss\");\n/* harmony import */ var _dataset_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./dataset.js */ \"./src/js/dataset.js\");\n\r\n\r\nconst data = _dataset_js__WEBPACK_IMPORTED_MODULE_1__.info;\r\n\n\n//# sourceURL=webpack://webm-test-data/./src/js/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../styles/style.scss */ \"./src/styles/style.scss\");\n/* harmony import */ var _dataset_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./dataset.js */ \"./src/js/dataset.js\");\n\r\n\r\nconst data = _dataset_js__WEBPACK_IMPORTED_MODULE_1__.info;\r\nconst main = document.querySelector(\".main_information\");\r\n\r\nconsole.log(main);\r\n\r\ndata.stock.forEach((el) => {\r\n  console.log(el.title);\r\n  let element = document.createElement(\"div\");\r\n  element.className = \"product_card\";\r\n  element.innerHTML = el.title;\r\n  main.appendChild(element);\r\n});\r\n\n\n//# sourceURL=webpack://webm-test-data/./src/js/app.js?");
 
 /***/ }),
 
