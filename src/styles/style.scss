@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 @import "components";
 @import "constants";
+@import "product_cards";
 * {
   margin: 0;
   padding: 0;
@@ -65,9 +66,14 @@ select {
   padding: 16px;
   background-color: $color_white;
   max-width: 270px;
+  max-height: 600px;
 }
 .text {
   font-size: $size_level4;
+}
+.text_info {
+  font-size: $size_level4;
+  margin: 15px 0;
 }
 .text_shadow {
   color: red;
@@ -182,9 +188,6 @@ label {
   padding-left: 5px;
   padding-right: 5px;
 }
-
-.product_card {
-  margin: 16px 0;
-  height: 200px;
-  border: 1px solid red;
+a {
+  text-decoration: none;
 }

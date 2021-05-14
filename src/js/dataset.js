@@ -3,8 +3,7 @@ export const info = {
     h1: "DAF - TRUCKS FOR SALE FROM NETHERLANDS",
     title: "Used DAF trucks from Netherlands for sale at SuperTrucks NL",
     meta_keywords: "trucks, offers, prices, used, new, marketplace",
-    meta_description:
-      "Keyword: daf netherlands. 26 trucks. Find new or used trucks in any price range fast and easy!",
+    meta_description: "Keyword: daf netherlands. 26 trucks. Find new or used trucks in any price range fast and easy!",
   },
   nav: [
     {
