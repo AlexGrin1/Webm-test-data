@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import "components";
+@import "constants";
+@import "product_cards";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-color: $color_body_background;
+}
+button:hover,
+input:hover {
+  cursor: pointer;
+}
+select {
+  width: 207px;
+  height: 35px;
+}
+.container {
+  padding-top: 40px;
+  max-width: 1140px;
+  margin: 0 auto;
+  background-color: $color_body_background;
+}
+.header_container {
+  display: flex;
+  height: 100px;
+  background-color: $color_white;
+}
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 39px auto 40px 16px;
+  font-weight: 700;
+  font-size: $size_level1;
+  line-height: 21px;
+}
+.nav_wrapper {
+  margin-top: 20px;
+  height: 50px;
+  display: flex;
+  background-color: $color_white;
+}
+.nav_link {
+  margin: 16px;
+  font-weight: 400;
+  font-size: $size_level4;
+  line-height: 19px;
+  color: $color_disabled_text;
+  &:hover {
+    transform: 0.3s;
+    color: $color_link_hover;
+    cursor: pointer;
+  }
+}
+.main_wrapper {
+  margin-top: 45px;
+  display: flex;
+}
+.aside_wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-right: 20px;
+  padding: 16px;
+  background-color: $color_white;
+  max-width: 270px;
+  max-height: 600px;
+}
+.text {
+  font-size: $size_level4;
+}
+.text_info {
+  font-size: $size_level4;
+  margin: 15px 0;
+}
+.text_shadow {
+  color: red;
+}
+.param {
+  font-size: $size_level3;
+  margin: 15px auto 11px 0;
+}
+.title_block {
+  display: flex;
+  align-items: center;
+  &::after {
+    content: url("../assets/dropdown_arrow.png");
+    cursor: pointer;
+  }
+}
+.block {
+  display: flex;
+  align-items: center;
+}
+.line {
+  margin: 0 auto;
+}
+
+.input {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  margin: 7px 9px 7px 0;
+}
+.input_min_max {
+  display: flex;
+  margin: 7px 13px 7px 0;
+  padding: 5px;
+  width: 112px;
+  height: 35px;
+}
+label {
+  font-size: $size_level4;
+}
+.arround {
+  border-radius: 50%;
+}
+.input_keywords {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  width: 236px;
+  height: 35px;
+}
+.button {
+  margin: 17px auto 21px auto;
+  width: 238px;
+  height: 34px;
+  font-size: $size_level3;
+  color: $color_white;
+  background-color: $color_link_hover;
+  border: 0;
+  &:hover {
+    box-shadow: 0 0 5px $color_black;
+  }
+}
+.button_nav {
+  width: 35px;
+  height: 35px;
+  font-size: $size_level3;
+  background-color: $color_white;
+  margin-right: 16px;
+  border: 0;
+  &:hover {
+    transform: 0.3s;
+    color: $color_link_hover;
+    cursor: pointer;
+  }
+}
+.section_wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+  font-size: $size_level3;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_wrapper {
+  display: flex;
+  margin: 23px 0 37px 0;
+  height: 243px;
+  background-color: $color_white;
+}
+.contact_block {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.adress {
+  font-size: $size_description;
+  display: flex;
+  margin: 0 10px 5px 23px;
+  &::before {
+    padding-right: 10px;
+    content: url("../assets/adress.png");
+  }
+}
+
+.contact {
+  font-size: $size_description;
+  line-height: 17x;
+  display: flex;
+  margin-left: 23px;
+  &::before {
+    content: url("../assets/tel_icon.png");
+    padding-right: 10px;
+  }
+}
+.information_block {
+  display: flex;
+  flex: 2;
+  font-size: $size_description;
+  padding: 75px 287px 107px 0;
+}
+.social {
+  margin-top: 11px;
+  margin-left: 23px;
+  line-height: 35px;
+}
+.icon {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+a {
+  text-decoration: none;
+}
+.facebook_social {
+  content: url("../assets/social_icon_facebook.png");
+  padding-right: 10px;
+}
+.twitter_social {
+  content: url("../assets/social_icon_twitter.png");
+  padding-right: 10px;
+}
+.instagram_social {
+  content: url("../assets/social_icon_instagram.png");
+  padding-right: 10px;
+}
+.youtube_social {
+  content: url("../assets/social_icon_youtube.png");
+  padding-right: 10px;
+}
