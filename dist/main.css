@@ -123,6 +123,11 @@ select {
   line-height: 19px;
   color: #828282;
 }
+.nav_link:hover {
+  transform: 0.3s;
+  color: #56ccf2;
+  cursor: pointer;
+}
 
 .main_wrapper {
   margin-top: 45px;
@@ -158,6 +163,15 @@ select {
   margin: 15px auto 11px 0;
 }
 
+.title_block {
+  display: flex;
+  align-items: center;
+}
+.title_block::after {
+  content: url(59943e09e49092d648cf407661d64b43.png);
+  cursor: pointer;
+}
+
 .block {
   display: flex;
   align-items: center;
@@ -177,6 +191,7 @@ select {
 .input_min_max {
   display: flex;
   margin: 7px 13px 7px 0;
+  padding: 5px;
   width: 112px;
   height: 35px;
 }
@@ -192,6 +207,7 @@ label {
 .input_keywords {
   display: flex;
   flex-direction: column;
+  padding: 5px;
   width: 236px;
   height: 35px;
 }
@@ -205,6 +221,9 @@ label {
   background-color: #56ccf2;
   border: 0;
 }
+.button:hover {
+  box-shadow: 0 0 5px black;
+}
 
 .button_nav {
   width: 35px;
@@ -213,6 +232,11 @@ label {
   background-color: white;
   margin-right: 16px;
   border: 0;
+}
+.button_nav:hover {
+  transform: 0.3s;
+  color: #56ccf2;
+  cursor: pointer;
 }
 
 .section_wrapper {
@@ -281,4 +305,24 @@ label {
 
 a {
   text-decoration: none;
+}
+
+.facebook_social {
+  content: url(ab44f96a21cd5401f80cc1af63caefd4.png);
+  padding-right: 10px;
+}
+
+.twitter_social {
+  content: url(35d4565f91293dcc4d514bce16e611bb.png);
+  padding-right: 10px;
+}
+
+.instagram_social {
+  content: url(44d55c62dd10004689b925163e9f87db.png);
+  padding-right: 10px;
+}
+
+.youtube_social {
+  content: url(7cbb875bd59cb91d6387765b3ee7b443.png);
+  padding-right: 10px;
 }

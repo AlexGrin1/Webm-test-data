@@ -1,7 +1,6 @@
 import * as info from "./dataset.js";
 const navWrapper = document.querySelector(".nav_wrapper");
 const textBlock = document.querySelector(".text_block");
-console.log(textBlock);
 const dataNav = info.info.nav;
 const pageText = info.info.page_text;
 
