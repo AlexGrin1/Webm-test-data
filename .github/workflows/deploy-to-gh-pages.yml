@@ -61,6 +61,6 @@ jobs:
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.3
         with:
-          token: ${{ secrets.ACCESS_TOKEN }}
+          token: ${{ git@github.com:AlexGrin1/Webm-test-data.git }}
           branch: gh-pages
           folder: "dist"
