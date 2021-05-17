@@ -19,6 +19,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: "./src/index.pug",
+      minify: false,
     }),
   ],
   module: {
