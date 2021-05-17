@@ -31,6 +31,9 @@ module.exports = {
             loader: "pug-html-loader",
             options: {
               self: true,
+              data: {
+                info: "./src/js/dataset.js",
+              },
             },
           },
         ],

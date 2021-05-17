@@ -1,4 +1,4 @@
-export const info = {
+module.exports = {
   page_meta: {
     h1: "DAF - TRUCKS FOR SALE FROM NETHERLANDS",
     title: "Used DAF trucks from Netherlands for sale at SuperTrucks NL",
