@@ -3,7 +3,7 @@ const json = require("json-loader");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-
+const dataset = require("dataset");
 module.exports = {
   mode: "development",
   entry: "./src/js/app.js",
@@ -33,7 +33,7 @@ module.exports = {
             options: {
               self: true,
               data: {
-                info: "./src/js/dataset.js",
+                info: dataset,
               },
             },
           },

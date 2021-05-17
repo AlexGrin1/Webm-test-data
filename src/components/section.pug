@@ -6,9 +6,12 @@
     button.button_nav >
   .search_block
     label.text(for="sort") Sort by 
-    select#sort(name="Sort", width='207px')
+    select#sort(name="Sort" width='207px')
       option.text_shadow(value="default" selected) Sort options
 .main_information
+  include ./card.pug
+  -var log = dataset
+  p=log
 .navigation
   .buttons_block
     button.button_nav <
@@ -17,6 +20,6 @@
     button.button_nav >
   .search_block
     label.text(for="sort") Sort by 
-    select#sort(name="Sort", width='207px')
+    select#sort(name="Sort" width='207px')
       option.text_shadow(value="default" selected) Sort options
 .text_block
