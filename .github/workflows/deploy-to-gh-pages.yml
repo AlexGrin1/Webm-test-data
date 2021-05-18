@@ -1,9 +1,10 @@
-name: Deploy to GithubPages
+name: Build and Deploy
+on: [push]
 
-on:
-  push:
-    branches:
-      - develop
+# on:
+#   push:
+#     branches:
+#       - develop
 
 # jobs:
 #   deploy-to-gh-pages:
