@@ -3,6 +3,7 @@ const json = require("json-loader");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const dataset = require("./src/js/dataset.js");
 
 module.exports = {
   mode: "development",
@@ -11,17 +12,6 @@ module.exports = {
     filename: "[name].[contenthash].js",
     path: path.resolve(__dirname, "dist"),
   },
-  plugins: [
-    new CleanWebpackPlugin(),
-    new MiniCssExtractPlugin({
-      filename: "[name].css",
-      chunkFilename: "[id].css",
-    }),
-    new HtmlWebpackPlugin({
-      template: "./src/index.pug",
-      minify: false,
-    }),
-  ],
   module: {
     rules: [
       {
@@ -32,7 +22,10 @@ module.exports = {
             loader: "pug-html-loader",
             options: {
               self: true,
-              data: {},
+              pretty: true,
+              data: {
+                info: "./src/js/dataset.js",
+              },
             },
           },
         ],
@@ -56,4 +49,15 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+    new CleanWebpackPlugin(),
+    new MiniCssExtractPlugin({
+      filename: "[name].css",
+      chunkFilename: "[id].css",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/index.pug",
+      minify: false,
+    }),
+  ],
 };
