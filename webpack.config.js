@@ -1,4 +1,5 @@
 const path = require("path");
+var webpack = require("webpack");
 const json = require("json-loader");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
@@ -16,19 +17,17 @@ module.exports = {
     rules: [
       {
         test: /\.pug$/,
-        use: [
-          "html-loader",
-          {
-            loader: "pug-html-loader",
-            options: {
-              self: true,
-              pretty: true,
-              data: {
-                info: "./src/js/dataset.js",
-              },
-            },
+        exclude: ["/node_modules/"],
+        loader: "pug-html-loader",
+        options: {
+          self: true,
+          pretty: true,
+          data: {
+            info: "test",
+            name: "alex",
           },
-        ],
+          name: "Gosha",
+        },
       },
       { test: /\.json$/, loader: "json-loader" },
       {
