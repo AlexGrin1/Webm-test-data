@@ -61,7 +61,6 @@ select {
 }
 .hidden {
   opacity: 0;
-  transition: 0.3s;
   position: absolute;
 }
 .breadcrumbs_link {
@@ -70,6 +69,8 @@ select {
 }
 .breadcrumbs_title {
   text-align: center;
+  font-size: $size_level1;
+  font-weight: bold;
 }
 .main_wrapper {
   margin-top: 45px;
@@ -84,7 +85,7 @@ select {
   padding: 16px;
   background-color: $color_white;
   max-width: 270px;
-  max-height: 600px;
+  max-height: 630px;
 }
 .text {
   font-size: $size_level4;
@@ -100,13 +101,17 @@ select {
   font-size: $size_level3;
   margin: 15px auto 11px 0;
 }
+
 .title_block {
   display: flex;
   align-items: center;
-  &::after {
-    content: url("../assets/dropdown_arrow.png");
-    cursor: pointer;
-  }
+}
+.arrow {
+  position: absolute;
+  right: 17px;
+  transform: translateY(50%);
+  content: url("../assets/dropdown_arrow.png");
+  cursor: pointer;
 }
 .block {
   display: flex;
@@ -139,6 +144,7 @@ label {
   display: flex;
   flex-direction: column;
   padding: 5px;
+  margin-top: 7px;
   width: 236px;
   height: 35px;
 }
