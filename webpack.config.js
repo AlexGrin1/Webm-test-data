@@ -1,6 +1,5 @@
 const path = require("path");
-var webpack = require("webpack");
-const json = require("json-loader");
+const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
@@ -17,18 +16,20 @@ module.exports = {
     rules: [
       {
         test: /\.pug$/,
-        exclude: ["/node_modules/"],
-        loader: "pug-html-loader",
-        options: {
-          self: true,
-          pretty: true,
-          data: {
-            info: "test",
-            name: "alex",
+        use: [
+          "html-loader",
+          {
+            loader: "pug-html-loader",
+            options: {
+              self: true,
+              pretty: true,
+              data: {
+                ...dataset,
+              },
+            },
           },
-        },
+        ],
       },
-      { test: /\.json$/, loader: "json-loader" },
       {
         test: /\.(s*)css$/,
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
