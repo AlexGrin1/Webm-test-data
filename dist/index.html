@@ -1,50 +1,52 @@
-<head><script defer src="main.065fe25ef8e708f719ef.js"></script><link href="main.css" rel="stylesheet"></head>Html Webpack Plugin:
+Html Webpack Plugin:
 <pre>
   Error: Child compilation failed:
-  Module build failed (from ./node_modules/pug-html-loader/lib/index.js):
-  ReferenceError: info is not defined
+  Module parse failed: Unexpected token (1:0)
+  File was processed with these loaders:
+   * ./node_modules/html-webpack-plugin/lib/loader.js
+   * ./node_modules/pug-html-loader/lib/index.js
+  You may need an additional loader to handle the result of these loaders.
+  > <!DOCTYPE html>
+  | <html lang="en"><head><script defer src="main.065fe25ef8e708f719ef.js"></script><link href="main.css" rel="stylesheet"></head>
+  |   <head>
+  ModuleParseError: Module parse failed: Unexpected token (1:0)
+  File was processed with these loaders:
+   * ./node_modules/html-webpack-plugin/lib/loader.js
+   * ./node_modules/pug-html-loader/lib/index.js
+  You may need an additional loader to handle the result of these loaders.
+  > <!DOCTYPE html>
+  | <html lang="en">
+  |   <head>
   
+  - NormalModule.js:905 handleParseError
+    [Webm-test-data]/[webpack]/lib/NormalModule.js:905:19
   
-  - index.js:32 Object.module.exports
-    [Webm-test-data]/[pug-html-loader]/lib/index.js:32:10
+  - NormalModule.js:1006 
+    [Webm-test-data]/[webpack]/lib/NormalModule.js:1006:5
   
-  - ModuleBuildError: Module build failed (from ./node_modules/pug-html-loader/lib/index.    js):
-  
-  - ReferenceError: info is not defined
-  
-  
-  - index.js:32 Object.module.exports
-    [Webm-test-data]/[pug-html-loader]/lib/index.js:32:10
-  
-  - NormalModule.js:690 processResult
-    [Webm-test-data]/[webpack]/lib/NormalModule.js:690:19
+  - NormalModule.js:732 processResult
+    [Webm-test-data]/[webpack]/lib/NormalModule.js:732:11
   
   - NormalModule.js:792 
     [Webm-test-data]/[webpack]/lib/NormalModule.js:792:5
   
-  - LoaderRunner.js:399 
-    [Webm-test-data]/[loader-runner]/lib/LoaderRunner.js:399:11
+  - LoaderRunner.js:406 
+    [Webm-test-data]/[loader-runner]/lib/LoaderRunner.js:406:3
   
-  - LoaderRunner.js:251 
-    [Webm-test-data]/[loader-runner]/lib/LoaderRunner.js:251:18
+  - LoaderRunner.js:232 iterateNormalLoaders
+    [Webm-test-data]/[loader-runner]/lib/LoaderRunner.js:232:10
   
-  - LoaderRunner.js:156 runSyncOrAsync
-    [Webm-test-data]/[loader-runner]/lib/LoaderRunner.js:156:3
+  - LoaderRunner.js:239 iterateNormalLoaders
+    [Webm-test-data]/[loader-runner]/lib/LoaderRunner.js:239:10
+  
+  - LoaderRunner.js:254 
+    [Webm-test-data]/[loader-runner]/lib/LoaderRunner.js:254:3
+  
+  - LoaderRunner.js:143 runSyncOrAsync
+    [Webm-test-data]/[loader-runner]/lib/LoaderRunner.js:143:11
   
   - LoaderRunner.js:250 iterateNormalLoaders
     [Webm-test-data]/[loader-runner]/lib/LoaderRunner.js:250:2
-  
-  - LoaderRunner.js:223 
-    [Webm-test-data]/[loader-runner]/lib/LoaderRunner.js:223:4
-  
-  - task_queues.js:80 processTicksAndRejections
-    internal/process/task_queues.js:80:21
-  
-  - task_queues.js:62 runNextTicks
-    internal/process/task_queues.js:62:3
-  
-  - timers.js:412 processImmediate
-    internal/timers.js:412:9
   
   - child-compiler.js:169 
     [Webm-test-data]/[html-webpack-plugin]/lib/child-compiler.js:169:18

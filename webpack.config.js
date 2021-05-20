@@ -26,7 +26,6 @@ module.exports = {
             info: "test",
             name: "alex",
           },
-          name: "Gosha",
         },
       },
       { test: /\.json$/, loader: "json-loader" },
