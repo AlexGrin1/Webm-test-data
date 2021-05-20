@@ -1,18 +1,18 @@
 mixin card(car)
   .product_card
-    //- .image
-    //-   img(src='')
+    .image
+      img(src=`https://raw.githubusercontent.com/aleksey-drozdov/webm-test-data/main/src/images/${car.image}`)
     .information 
       .title_info 
         .title=car.title
       hr.line(width='100%')
-    //-   .body_info 
-    //-     .text=car.type
-    //-     span.info_in_radius=car.payload
-    //-     span.info_in_radius=car.gross_weight
-    //-   .footer_info
-    //-     .info_in_border=car.year
-    //-     .info_in_border=car.mileage
-    //-     .info_in_border=car.axle_configuration
-    //-     .info_in_border=car.power
-    //- .price=car.price 
+      .body_info 
+        .text=car.type
+        span.info_in_radius=car.payload
+        span.info_in_radius=car.gross_weight
+      .footer_info
+        .info_in_border=car.year
+        .info_in_border=car.mileage
+        .info_in_border=car.axle_configuration
+        .info_in_border=`${car.power} ${car.power_measure}`
+    .price=`${car.price} ${car.price_currency}` 
