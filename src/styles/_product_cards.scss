@@ -3,6 +3,10 @@
   background-color: $color_white;
   padding: 16px;
   margin: 16px 0;
+  &:hover {
+    box-shadow: 0 0 12px $color_link;
+    transition: 0.3s;
+  }
 }
 .image {
   display: flex;
@@ -25,6 +29,11 @@
   display: flex;
   font-size: $size_level3;
   font-weight: bold;
+  &:hover {
+    cursor: pointer;
+    color: $color_link;
+    transition: 0.2s;
+  }
 }
 .price {
   display: flex;

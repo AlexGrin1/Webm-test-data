@@ -1,2 +1,5 @@
 .header_container 
     .logo Header/Logo 
+.nav_wrapper
+    each nav in self.nav
+        a.nav_link(href=`${nav.href}`)=nav.text
