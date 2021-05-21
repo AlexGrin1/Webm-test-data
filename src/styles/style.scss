@@ -59,12 +59,25 @@ select {
     cursor: pointer;
   }
 }
+.hidden {
+  opacity: 0;
+  transition: 0.3s;
+  position: absolute;
+}
+.breadcrumbs_link {
+  display: inline-block;
+  margin: 13px 0 13px 16px;
+}
+.breadcrumbs_title {
+  text-align: center;
+}
 .main_wrapper {
   margin-top: 45px;
   display: flex;
 }
 .aside_wrapper {
   display: flex;
+  position: relative;
   flex-direction: column;
   flex: 1;
   margin-right: 20px;
@@ -213,6 +226,9 @@ label {
 }
 a {
   text-decoration: none;
+  &:active {
+    color: $color_default_text;
+  }
 }
 .facebook_social {
   content: url("../assets/social_icon_facebook.png");

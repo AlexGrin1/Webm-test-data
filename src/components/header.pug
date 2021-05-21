@@ -3,3 +3,7 @@
 .nav_wrapper
     each nav in self.nav
         a.nav_link(href=`${nav.href}`)=nav.text
+.breadcrumbs
+    for nav in self.breadcrumbs
+        a.breadcrumbs_link(href=`${nav.href}`)=`${nav.text}`
+    .breadcrumbs_title Heading leve1
