@@ -135,7 +135,11 @@ select {
   height: 35px;
 }
 label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: $size_level4;
+  cursor: pointer;
 }
 .arround {
   border-radius: 50%;
